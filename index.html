@@ -16,7 +16,6 @@
       src="https://kit.fontawesome.com/1ed5c32fa0.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -171,9 +170,26 @@
       <!-- Middle part -->
       <div class="middle">
         <div class="box welcome">
-          <img src="images/pexels-pixabay-459762.jpg" alt="" />
+          <img
+            src="images/pexels-pixabay-459762.jpg"
+            class="welcome-img active"
+            data-slide="one"
+          />
+          <img
+            src="images/pexels-irina-iriser-1366957.jpg"
+            class="welcome-img"
+            data-slide="two"
+          />
+          <img
+            src="images/pexels-radu-andrei-razvan-773594.jpg"
+            class="welcome-img"
+            data-slide="three"
+          />
           <p>Welcome to the community</p>
-          <div class="circles"><span></span><span></span><span></span></div>
+          <div class="circles">
+            <span data-slide="one"> </span><span data-slide="two"> </span
+            ><span data-slide="three"></span>
+          </div>
         </div>
         <div class="box activity">
           <div class="header">Latest Activity</div>
