@@ -9,5 +9,11 @@ setInterval(() => {
     img.classList.remove("active");
   });
   sliderImages[index].classList.add("active");
+  sliderCircles.forEach((circle) => {
+    circle.style.borderColor = "white";
+    if (sliderImages[index].dataset.slide === circle.dataset.slide) {
+      circle.style.borderColor = "#c12f6c";
+    }
+  });
   index++;
 }, 3000);
