@@ -167,7 +167,7 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 .activeMembers-container img {
-  width: 50px;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -195,7 +195,6 @@ input[type="submit"]:hover {
   height: 16rem;
   position: relative;
   overflow: hidden;
-  background-color: lightcoral;
 }
 
 .welcome-img {
@@ -203,14 +202,15 @@ input[type="submit"]:hover {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  left: 0;
+  left: -100%;
   top: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
+  /* opacity: 0; */
+  transition: left 0.5s;
 }
 
 .welcome-img.active {
-  opacity: 1;
+  left: 0;
+  /* opacity: 1; */
 }
 
 .welcome p {

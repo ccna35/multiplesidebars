@@ -8,9 +8,6 @@ setInterval(() => {
   sliderImages.forEach((img) => {
     img.classList.remove("active");
   });
-  //   console.log(index);
   sliderImages[index].classList.add("active");
   index++;
-}, 5000);
-
-// console.log(sliderImages[index]);
+}, 3000);
